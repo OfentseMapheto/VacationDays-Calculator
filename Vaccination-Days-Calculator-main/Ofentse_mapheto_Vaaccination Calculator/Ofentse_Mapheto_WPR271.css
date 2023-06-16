@@ -1,0 +1,184 @@
+nav{
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 22px;
+    padding-bottom: 0px;
+}
+.welcome{
+    width: 100%;
+    height: auto;
+}
+.ser{
+    background-color: lightblue;
+    width: 100%;
+    height: 43px;
+    color: white;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+.visitors{
+    background-color: maroon;
+    width: 100%;
+    height: 43px;
+    font-size: 20px;
+    padding-left: 8px;
+    color: white;
+    padding-top: 5px;
+}
+.queries{
+    background-color: limegreen;
+    width: 100%;
+    height: 43px;
+    font-size: 20px;
+    padding-left: 8px;
+    color: white;
+    padding-top: 5px;
+}
+.yebo{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recover{
+    background-color: black;
+    width: 100%;
+    height: 43px;
+    font-size: 20px;
+    padding-left: 8px;
+    color: white;
+    padding-top: 5px;
+}
+.server{
+    width: 22%;
+    height: 450px;
+    float:left;
+    margin: 5px; 
+    margin-top: 15px;
+    margin-left: 25px;
+    
+}
+.visitor{
+    width: 22%;
+    height: 450px;
+    float:left;
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.api{
+    width: 22%;
+    height: 450px;
+    float:left;
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.rate{
+    width: 22%;
+    height: 450px;
+    float:left;
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+img{
+    height: 220px;
+    width:100%;
+}
+.after{
+    width: 100%;
+    height: 80px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: center;
+    float: left;
+    background-image: url(Images/Banners/coronavirus-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.provincial{
+    float: left;
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 22px;
+    padding-bottom: 0px;
+    margin: 15px;
+    width: 100%;
+}
+
+
+.for{
+    width: 50%;
+    margin: 5px;
+    margin-left: 350px;
+    float: left;
+    background-color: black;
+    color: white;
+
+}
+.tofo{
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+}
+
+pre{
+    margin-left: 10px;
+}
+input{
+    width: 95%;
+    margin-left: 10px;
+    height: 30px;
+}
+form, label{
+    width: 95%;
+    font-size: 18px;
+    margin-left: 10px;
+}
+button{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    background-color: purple;
+    margin-bottom: 10px;
+    height: 80px;
+    color: white;
+}
+.vid{
+    float: left;
+    width: 45%;
+    height: 350px;
+}
+.from{
+    color: purple;
+}
+.video{
+    width: 100%;
+    background-color: purple;
+    height: 50px;
+    font-size: 18px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    float: left;
+}
+

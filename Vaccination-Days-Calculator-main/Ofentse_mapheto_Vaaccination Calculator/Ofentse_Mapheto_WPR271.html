@@ -1,0 +1,172 @@
+<!doctype html>
+<html lan="en">
+    <head>
+    <title>Vaccination Registration 2021</title>
+    <link rel="stylesheet" href="Ofentse_Mapheto_WPR271.css"/>
+    </head>
+    <body>
+        
+    <div class="main">
+        
+        <!--side menu-->
+        <div class="side">
+            <!--<img src="Images/infinity-logo.png">
+<button type="Submit" value="Dashboard">Dashboard</button>
+<button type="Submit" value="API Directory">API Directory</button>
+<button type="Submit" value="Partner Program">Partner Program</button>
+<button type="Submit" value="Useful Resources">Useful Resources</button>-->
+        </div>
+        
+        <!--content-->
+        <nav>2021 VACCINATION REGISTRATION</nav>
+        
+        <!--cards here-->
+        <div class="welcome">
+              <div class="My">
+            <label for="birth_date">Birth Date:</label><br/>
+	<input type="date" id="birth_date" name="birth_date">
+	<br />	
+	<label for="birth_date">Select Provinces:</label><br/>
+                  <div class= "yebo">
+	<select name="cars" id="provinces">
+		<option selected="true" disabled="disabled">select province</option>
+		<option value="Eastern Cape">Eastern Cape</option>
+		<option value="Mpumalanga">Mpumalanga</option>
+		<option value="Free State">Free State</option>
+		<option value="Gauteng">Gauteng</option>
+		<option value="KwaZulu-Natal">KwaZulu-Natal</option>
+		<option value="Limpopo">Limpopo</option>
+		<option value="Northern Cape">Northern Cape</option>
+		<option value="North West">North West</option>
+	</select></div>
+	<br />
+	<button onclick="myRegistration()">Register</button>
+            
+	
+	<p id="error" style="color:red"></p>
+	<p id="results"></p>
+	
+
+		
+	<script>
+		function myRegistration() {
+		
+			var Difference_In_Time = 0;
+
+			var Difference_In_Days = 0;
+			
+			var output="";
+			
+			var datesize="";
+			
+			var phase2_date = new Date("08/17/2021");
+			
+			var phase3_date = new Date("09/28/2021");
+			
+			var phase4_date = new Date("11/09/2021");
+			
+			var today = new Date();
+			
+			var dateofbirth=document.getElementById("birth_date").value;
+			
+			var province=document.getElementById("provinces").value;
+			
+			var dateofbirthyear  = new Date(dateofbirth);
+			
+			var age = today.getFullYear() - dateofbirthyear.getFullYear();
+			
+			var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+					
+			var current_date = new Date(date);
+			
+			if(typeof dateofbirth !=="NaN" && province !=="select province"){
+				if(age >=40){
+					Difference_In_Time = phase2_date.getTime() - current_date.getTime();
+					Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+					
+					output="Phase 2 dates: ".concat(phase2_date.getDate()+'/'+phase2_date.getMonth()+'/'+phase2_date.getFullYear()).fontsize(30)
+					+"<br><br>"+"Age: ".concat(age)+"<br>"+"Province: ".concat(province)+"<br>"+"Number Of Days Remaining for Registration: ".concat(Difference_In_Days);
+					;
+					
+				} else if(age >=18 && age<=39){
+					Difference_In_Time = phase3_date.getTime() - current_date.getTime();
+					Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+					
+					output="Phase 3 dates: ".concat(phase3_date.getDate()+'/'+phase3_date.getMonth()+'/'+phase3_date.getFullYear()).fontsize(30)
+					+"<br><br>"+"Age: ".concat(age)+"<br>"+"Province: ".concat(province)+"<br>"+"Number Of Days Remaining for Registration: ".concat(Difference_In_Days);
+					;
+					
+				}else{
+					Difference_In_Time = phase4_date.getTime() - current_date.getTime();
+					Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+					
+					output="Phase 4 dates: ".concat(phase4_date.getDate()+'/'+phase4_date.getMonth()+'/'+phase4_date.getFullYear()).fontsize(30)
+					+"<br><br>"+"Age: ".concat(age)+"<br>"+"Province: ".concat(province)+"<br>"+"Number Of Days Remaining for Registration: ".concat(Difference_In_Days);
+					;
+				}
+			
+				document.getElementById("results").innerHTML = output;
+				document.getElementById("error").innerHTML = "";
+			}else{
+				document.getElementById("error").innerHTML = "Make sure fields are filled";
+			}
+		}
+	</script>
+            
+            </div>
+            
+            
+         
+            <!--banner-->
+            <div class="after">
+                <blockquote>Getting vaccinated against COVID-19 means we can come back together with the people we love. At BELGIUM CAMPUS ITversity, we’re helping people get the information they need about COVID-19 vaccines and making it easy to find when and where you can get vaccinated. After over a year of social distancing, let’s get vaccinated so we can hug our friends and family and do more together again. </blockquote>
+            </div>
+            
+            <!--provincial-->
+            <div class="provincial">Contact Support</div>
+            
+                
+            <div class="for">
+                <form>
+                
+                   <div>
+                        <div class="tofo">
+                            <div class ="from">Feel free to contact us:
+                            </div>Leave us a message below and we will contact you</div>
+                    
+                    <label>Individual Name</label><br />
+                    <input type="text" placeholder="Your Full Name"><br />
+                    
+                    <label>Contact Number</label><br />
+                    <input type="text" placeholder="Please write your phone number(+276 671 111)"><br />
+                    
+                    <label>Message us</label><br />
+                    <input type="text" placeholder="Briefly explain your question"><br />
+                           Keep anonymous<input type="checkbox"><br />
+                    <button type="submit" value="Pledge">Send</button>
+                    </div>
+                
+                </form>
+                </div>
+                
+               
+              
+             
+                    
+                    
+                    
+               
+                
+            </div>
+            <!--footer-->
+            <footer>
+            
+              <br />  &copy;2021<br />
+               SA Government and Belgium Campus ITversity<sup>  TM</sup>
+            </footer>
+        </div>
+        
+        
+        
+    </body>
+</html>
